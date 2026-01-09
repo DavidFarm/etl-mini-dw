@@ -27,12 +27,12 @@ It’s written as a structured, staged script (≈1800 lines) intended to be eas
 ---
 
 ## Architecture
-![Architecture](docs/images/architecture.png)
+![Architecture](docs/images/arch.png)
 
 ---
 
 ## Proof it runs (ETL tracking + run logs)
-![Load tracker + run logs](docs/images/load_tracker_and_run_log.png)
+![Load tracker + run logs](docs/images/Runlogs.png)
 
 ---
 
@@ -47,8 +47,8 @@ The script is organized into numbered stages.
 ### Stages 1–3
 ![Stages 1–3](docs/images/toc_part1.png)
 
-### Stages 4–X
-![Stages 4–X](docs/images/toc_part2.png)
+### Stages 3–X
+![Stages 3–X](docs/images/toc_part2.png)
 
 ---
 
@@ -72,13 +72,3 @@ The script is organized into numbered stages.
 - **ETL procedures:** `etl_load_dimcustomer`, `etl_load_dimsalesperson`, `etl_load_dimproduct`, `etl_load_factsales`
 - **Metadata tables:** `davidf_int.etl_load_tracker`, `davidf_int.etl_run_log`
 - **Schemas:** `davidf_staging`, `davidf_int`, `davidf_mart`
-
----
-
-## Selected code excerpts (what to look for)
-### 1) Watermarking for incremental loads
-_See: `etl_load_tracker` + load procedures_
-
-```sql
--- (Example excerpt: watermark read / update)
--- (Add a small snippet here from your code once you pick it)
