@@ -7,7 +7,7 @@ https://github.com/DavidFarm/temporal-credit-analysis
 ---
 ## TL;DR
 A SQL Server ETL mini-DW (WideWorldImporters → DW) showing **incremental loads + SCD2 dims + run logging**.  
-Start with the **Code tour** section, then open the SQL file linked above.
+Start with the **Code tour** section, then open the SQL file [`code/SQL_1_Assignment_2_David_Färm.sql`](code/SQL_1_Assignment_2_David_Färm.sql).
 
 ---
 
