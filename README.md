@@ -5,6 +5,11 @@ A single-file T-SQL ETL project demonstrating **incremental loads**, **SCD2-styl
 https://github.com/DavidFarm/temporal-credit-analysis
 
 ---
+## TL;DR
+A SQL Server ETL mini-DW (WideWorldImporters → DW) showing **incremental loads + SCD2 dims + run logging**.  
+Start with the **Code tour** section, then open the SQL file linked above.
+
+---
 
 ## Why this repo exists
 This repo is the **implementation** behind a classic analytics workflow:
