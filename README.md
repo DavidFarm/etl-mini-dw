@@ -210,7 +210,7 @@ where fs.sales_nk IS NULL;
 ---
 
 ## License
-This project is licensed under the MIT License — see the [text](docs/license.md)(`LICENSE`) file for details.
+This project is licensed under the MIT License — see the [`LICENSE`](docs/license.md) file for details.
 
 ---
 
