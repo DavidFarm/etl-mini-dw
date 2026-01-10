@@ -68,7 +68,7 @@ The script is organized into numbered stages.
 ### Run
 1. Open and execute:
    - `code/SQL_1_Assignment_2_David_Färm.sql`
-2. Re-run the ETL procedures to validate incremental behavior.
+2. Re-run the ETL procedures to validate incremental behavior. (Run once to create DB/objects and do the inital load logic; re-run procs to confirm incremental = 0 rows)
 3. Inspect logs to validate results from each run are as expected:
    - `davidf_int.etl_run_log`
    - `davidf_int.etl_load_tracker`
@@ -207,4 +207,26 @@ cross join (
 ) unknowns
 where fs.sales_nk IS NULL;
 ```
+---
 
+## License
+This project is licensed under the MIT License — see the [text](docs/license.md)(`LICENSE`) file for details.
+
+---
+
+## About me
+I'm David Farm — Stockholm-based and transitioning into Data Engineering, with a background in project leadership and data-driven decision support in finance and real estate development.
+
+**What I bring:**
+- SQL Server / T-SQL (ETL patterns, incremental loads, SCD2-style dimensions)
+- BI & analytics (Power BI, reporting, stakeholder-facing delivery)
+- Project execution (building reliable pipelines, structure, documentation)
+
+**What I'm looking for:**
+Data Engineering / Analytics Engineering / BI Engineering roles (Stockholm, Sweden — open to relocation for the right role).
+
+**Links:**
+- LinkedIn: www.linkedin.com/in/david-färm-a16022294
+
+## Contact
+Best way to reach me: LinkedIn (DM).
