@@ -36,7 +36,7 @@ It’s written as a structured, staged script (≈1800 lines) intended to be eas
 
 ---
 
-## Proof it runs (ETL tracking + run logs)
+## Execution logs (proof it runs)
 ![Load tracker + run logs](docs/images/Runlogs.png)
 
 ---
@@ -44,10 +44,13 @@ It’s written as a structured, staged script (≈1800 lines) intended to be eas
 ## Code structure (stages / how to navigate)
 The script is organized into numbered stages.
 
-**Start here (5-minute tour):**
-1. **Stage 3** – incremental ETL stored procedures (`etl_load_dim*`, `etl_load_factsales`)
-2. **Stage 1.4 / 1.9** – ETL metadata: `etl_load_tracker` + `etl_run_log`
+**Some highlights if you only have 5 minutes:**
+1. **Stage 1.4 / 1.9** – ETL metadata: `etl_load_tracker` + `etl_run_log`
+(setting up watermarks logs for incremental runs and logging each runs & actions taken)
+2. **Stage 3** – incremental ETL stored procedures (`etl_load_dim*`, `etl_load_factsales`)
+(main structure of loading, validating, mapping and organizing data)
 3. **Stage 5 / Stage X** – validations + sanity checks
+(Extra soft checks based on ETL/DW logic)
 
 ### Stages 1–3
 ![Stages 1–3](docs/images/toc_part1.png)
@@ -66,13 +69,13 @@ The script is organized into numbered stages.
 1. Open and execute:
    - `code/SQL_1_Assignment_2_David_Färm.sql`
 2. Re-run the ETL procedures to validate incremental behavior.
-3. Inspect logs:
+3. Inspect logs to validate results from each run are as expected:
    - `davidf_int.etl_run_log`
    - `davidf_int.etl_load_tracker`
 
 ---
 
-## Key components (quick links)
+## Key components (incl link to full code)
 - **SQL script:** [`code/SQL_1_Assignment_2_David_Färm.sql`](code/SQL_1_Assignment_2_David_Färm.sql)
 - **ETL procedures:** `etl_load_dimcustomer`, `etl_load_dimsalesperson`, `etl_load_dimproduct`, `etl_load_factsales`
 - **Metadata tables:** `davidf_int.etl_load_tracker`, `davidf_int.etl_run_log`
